@@ -28,3 +28,19 @@ The expected public address is:
 `https://prattaydey-SP.github.io/`
 
 GitHub repository names and URLs are case-insensitive, so the address may be displayed in lowercase.
+
+
+## Updating the back-to-top fix on GitHub
+
+The corrected files in this package replace the versions already in the repository.
+
+1. Open `prattaydey-SP/prattaydey-SP.github.io` on GitHub.
+2. Select **Add file → Upload files**.
+3. Upload the corrected `index.html` and `prattay-website.html`.
+4. GitHub will warn that files with those names already exist; continue with the replacement.
+5. Enter the commit message: `Fix back to top button`.
+6. Choose **Commit directly to the main branch**.
+7. Select **Commit changes**.
+8. Wait a few minutes, then refresh the live site with `Ctrl+F5`.
+
+Only `index.html` is required for the public homepage. `prattay-website.html` is included so both copies remain synchronized.

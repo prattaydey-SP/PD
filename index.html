@@ -2222,7 +2222,7 @@ em { color: inherit; }
     <div class="container footer-inner">
       <p>© <span id="current-year"></span> Prattay Dey</p>
       <p>Research portfolio · Host–pathogen interactions</p>
-      <a href="#top">Back to top ↑</a>
+      <a href="#home" id="back-to-top" class="back-to-top">Back to top ↑</a>
     </div>
   </footer>
 
@@ -2484,6 +2484,20 @@ copyButton.addEventListener('click', async () => {
   }
   window.setTimeout(() => copyStatus.textContent = '', 2600);
 });
+
+
+/* ---------- Back to top ---------- */
+const backToTopButton = doc.querySelector('#back-to-top');
+if (backToTopButton) {
+  backToTopButton.addEventListener('click', event => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: prefersReducedMotion ? 'auto' : 'smooth'
+    });
+  });
+}
 
 /* ---------- Footer year ---------- */
 doc.querySelector('#current-year').textContent = String(new Date().getFullYear());
